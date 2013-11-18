@@ -8,7 +8,7 @@ For instance adding doctypes with uSync.
 When problems like these are found, the package source directory is left on disk,  
 so you could for instance add content\usync\documenttypes\whatever..
 
-Usage: ´PackageToNuget <inputfile>
+Usage: `PackageToNuget <inputfile>`
 
 Example:
 
