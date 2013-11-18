@@ -1,4 +1,4 @@
-Umbraco-Package-to-Nuget-converter
+Umbraco Package to Nuget Converter
 ==================================
 
 Converts Umbraco packages to Nuget packages.  
@@ -24,7 +24,7 @@ Output:
     Removing temp directory
     Google Maps for Umbraco.nuspec generated
 
-No problems, custom "property editor" installed to bin.
+No problems, custom "property editor" dll ready as nuget package.
 
 Example:
 
@@ -59,6 +59,6 @@ Output:
     Removing temp directory  
     DocTypeMixins.nuspec generated  
 
-Would generate nuget package without root doctype for mixins.
+Would generate nuget package without root doctype for mixins.  
 Must be done with uSync or similar.
 
