@@ -16,7 +16,7 @@ Example:
 
 Output:
 
-    Attempting to open ..\..\..\testdata\Google_Maps_for_Umbraco_2.1.0.zip
+    Attempting to open Google_Maps_for_Umbraco_2.1.0.zip
     Read package definition Google Maps for Umbraco 2.1.0
     Making temporary directory 6c9907d913304641b16f3eb9873f6db8
     Building nuget structure
@@ -49,7 +49,7 @@ Example:
 
 Output:
 
-    Attempting to open ..\..\..\testdata\DocTypeMixins_2.0.zip  
+    Attempting to open DocTypeMixins_2.0.zip  
     Read package definition DocTypeMixins 2.0  
     DocumentTypes contains 1 entries which will be ignored  
     Empty readme, using name as description  
