@@ -14,7 +14,8 @@ Example:
 
     PackageToNuget imagegen_2.9.0.zip
 
-Output:  
+Output:
+
     Attempting to open imagegen_2.9.0.zip  
     Read package definition ImageGen 2.9.0  
     Install control configured, custom logic might be ignored.  
@@ -31,6 +32,7 @@ Example:
     PackageToNuget doctypemixins_2.0.zip'
 
 Output:
+
     Attempting to open ..\..\..\testdata\DocTypeMixins_2.0.zip  
     Read package definition DocTypeMixins 2.0  
     DocumentTypes contains 1 entries which will be ignored  
