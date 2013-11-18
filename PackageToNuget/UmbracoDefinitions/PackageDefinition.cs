@@ -22,6 +22,16 @@ namespace PackageToNuget.UmbracoDefinitions
             get; set;
         }
 
+        public List<DocumentType> DocumentTypes { get; set; } 
+        public List<object> Templates { get; set; }
+        public List<object> Stylesheets { get; set; }
+        public List<object> DictionaryItems { get; set; }
+        public List<object> Languages { get; set; }
+        public List<object> DataTypes { get; set; }
+        public List<object> Actions { get; set; }
+        [XmlElement("control")]
+        public string Control { get; set; }
+
         #region equality
 
         public bool Equals(PackageDefinition other)

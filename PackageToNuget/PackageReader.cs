@@ -29,17 +29,24 @@ namespace PackageToNuget
         internal static PackageDefinition ReadDefinition(ZipFile zipFile)
         {
             var packagePath = "package.xml";
-
-            var firstEntry = zipFile[0];
-            Guid rootFolderId;
-            if (Guid.TryParse(firstEntry.Name.TrimEnd('/'), out rootFolderId))
-                packagePath = String.Format(@"{0}/{1}", rootFolderId.ToString("D"), packagePath);
+            var root = FindRoot(zipFile);
+            packagePath = ZipEntry.CleanName(Path.Combine(root, packagePath));
 
             var entry = zipFile.GetEntry(packagePath);
             using (var stream = zipFile.GetInputStream(entry))
             {
                 return PackageDefinition.Load(stream);
             }
+        }
+
+        public static string FindRoot(ZipFile zipFile)
+        {
+            var root = "";
+            var firstEntry = zipFile[0];
+            Guid rootFolderId;
+            if (Guid.TryParse(firstEntry.Name.TrimEnd('/'), out rootFolderId))
+                root = rootFolderId.ToString("D");
+            return root;
         }
     }
 }

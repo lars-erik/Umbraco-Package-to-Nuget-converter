@@ -11,13 +11,16 @@ namespace PackageToNuget.UmbracoDefinitions
         [XmlElement("author")]
         public Author Author { get; set; }
 
+        [XmlElement("readme")]
+        public string ReadMe { get; set; }
+
         #region equality
 
         public bool Equals(PackageInfo other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return Equals(Package, other.Package) && Equals(Author, other.Author);
+            return Equals(Package, other.Package) && Equals(Author, other.Author) && Equals(ReadMe, other.ReadMe);
         }
 
         public override bool Equals(object obj)
@@ -32,7 +35,7 @@ namespace PackageToNuget.UmbracoDefinitions
         {
             unchecked
             {
-                return ((Package != null ? Package.GetHashCode() : 0)*397) ^ (Author != null ? Author.GetHashCode() : 0);
+                return ((ReadMe != null ? ReadMe.GetHashCode() : 0)*397) ^ ((Package != null ? Package.GetHashCode() : 0)*397) ^ (Author != null ? Author.GetHashCode() : 0);
             }
         }
 
