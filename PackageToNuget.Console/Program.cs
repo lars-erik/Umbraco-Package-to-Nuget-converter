@@ -66,6 +66,7 @@ namespace PackageToNuget
                 if (items.Any())
                 {
                     Write(ConsoleColor.Yellow, "{0} contains {1} entries which will be ignored", ((MemberExpression)func.Body).Member.Name, items.Count());
+                    deleteTemp = false;
                 }
             }
 

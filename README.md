@@ -57,7 +57,6 @@ Output:
     Building nuget structure  
     Packaging f24ee9a174374c0dbcecf02d995f949a\DocTypeMixins.nuspec  
     DocTypeMixins.nuspec generated  
-    Removing temp directory  
 
 Would generate nuget package without root doctype for mixins.  
 Must be done with uSync or similar.
