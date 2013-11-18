@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>DocTypeMixins</id>
+    <version>2.0</version>
+    <authors>Pete Duncanson, Matt Brailsford</authors>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>http://our.umbraco.org/projects/backoffice-extensions/doctypemixins</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DocTypeMixins</description>
+    <dependencies />
+  </metadata>
+</package>
