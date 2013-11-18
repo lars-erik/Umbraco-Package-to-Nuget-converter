@@ -16,12 +16,12 @@ Example:
 
 Output:
 
-    Attempting to open Google_Maps_for_Umbraco_2.1.0.zip
-    Read package definition Google Maps for Umbraco 2.1.0
-    Making temporary directory 6c9907d913304641b16f3eb9873f6db8
-    Building nuget structure
-    Packaging 6c9907d913304641b16f3eb9873f6db8\Google Maps for Umbraco.nuspec
-    Google Maps for Umbraco.nuspec generated
+    Attempting to open Google_Maps_for_Umbraco_2.1.0.zip  
+    Read package definition Google Maps for Umbraco 2.1.0  
+    Making temporary directory 6c9907d913304641b16f3eb9873f6db8  
+    Building nuget structure  
+    Packaging 6c9907d913304641b16f3eb9873f6db8\Google Maps for Umbraco.nuspec  
+    Google Maps for Umbraco.nupkg generated  
     Removing temp directory
 
 No problems, custom "property editor" dll ready as nuget package.
@@ -56,7 +56,7 @@ Output:
     Making temporary directory f24ee9a174374c0dbcecf02d995f949a  
     Building nuget structure  
     Packaging f24ee9a174374c0dbcecf02d995f949a\DocTypeMixins.nuspec  
-    DocTypeMixins.nuspec generated  
+    DocTypeMixins.nupkg generated  
     Problems found, leaving package directory for modification.
 
 Would generate nuget package without root doctype for mixins.  
