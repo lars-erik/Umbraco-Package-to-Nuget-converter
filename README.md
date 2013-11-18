@@ -12,6 +12,22 @@ Usage: PackageToNuget <inputfile>
 
 Example:
 
+    PackageToNuget Google_Maps_for_Umbraco_2.1.0.zip
+
+Output:
+
+    Attempting to open ..\..\..\testdata\Google_Maps_for_Umbraco_2.1.0.zip
+    Read package definition Google Maps for Umbraco 2.1.0
+    Making temporary directory 6c9907d913304641b16f3eb9873f6db8
+    Building nuget structure
+    Packaging 6c9907d913304641b16f3eb9873f6db8\Google Maps for Umbraco.nuspec
+    Removing temp directory
+    Google Maps for Umbraco.nuspec generated
+
+No problems, custom "property editor" installed to bin.
+
+Example:
+
     PackageToNuget imagegen_2.9.0.zip
 
 Output:
@@ -29,7 +45,7 @@ Would generate nuget package without web.config transform done in ImageGen's ins
 
 Example:
 
-    PackageToNuget doctypemixins_2.0.zip'
+    PackageToNuget doctypemixins_2.0.zip
 
 Output:
 
