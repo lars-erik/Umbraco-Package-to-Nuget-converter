@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>DocTypeMixins</name>
+      <version>2.0</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://our.umbraco.org/projects/backoffice-extensions/doctypemixins</url>
+      <requirements>
+        <major>4</major>
+        <minor>5</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Pete Duncanson, Matt Brailsford</name>
+      <website>http://www.offroadcode.com/</website>
+    </author>
+    <readme><![CDATA[]]></readme>
+  </info>
+
+  <DocumentTypes>
+    <DocumentType>
+      <Info>
+        <Name>Mixins</Name>
+        <Alias>Mixins</Alias>
+        <Icon>.sprTreeDeveloperMacro</Icon>
+        <Thumbnail>developer.png</Thumbnail>
+        <Description />
+        <AllowedTemplates />
+        <DefaultTemplate />
+      </Info>
+      <Structure />
+      <GenericProperties />
+      <Tabs />
+    </DocumentType>
+  </DocumentTypes>
+
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions />
+
+  <control />
+
+  <files>
+    <file>
+      <guid>832034e6-8976-403e-b12d-f19bb52d9549.png</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Images</orgPath>
+      <orgName>docTypeMixin.png</orgName>
+    </file>
+    <file>
+      <guid>e5e9391d-de85-4425-a706-bcd81f1c9ba3.png</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Images</orgPath>
+      <orgName>docTypeMixinApply.png</orgName>
+    </file>
+    <file>
+      <guid>9e8217a1-6637-42ad-a2e9-63b4436c1533.png</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Images</orgPath>
+      <orgName>docTypeMixinMaster.png</orgName>
+    </file>
+    <file>
+      <guid>80196411-2381-4845-99e8-c592fdf24f1a.js</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Scripts</orgPath>
+      <orgName>create.js</orgName>
+    </file>
+    <file>
+      <guid>acb9d935-92ef-476b-a5db-799d3b243863.js</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Scripts</orgPath>
+      <orgName>drag_and_drop.js</orgName>
+    </file>
+    <file>
+      <guid>d79d2e21-e968-462e-841a-a2f3b63e16d1.js</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Scripts</orgPath>
+      <orgName>edit.js</orgName>
+    </file>
+    <file>
+      <guid>f0e11bc9-bef5-4d36-816a-54a9ea91dcc6.css</guid>
+      <orgPath>/App_Plugins/DocTypeMixins/Styles</orgPath>
+      <orgName>drag_and_drop.css</orgName>
+    </file>
+    <file>
+      <guid>6b52fc7a-5e50-4382-833e-468fa49a18e8.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Our.Umbraco.DocTypeMixins.dll</orgName>
+    </file>
+  </files>
+
+</umbPackage>

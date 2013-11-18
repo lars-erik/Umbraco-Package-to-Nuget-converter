@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToNuget.Tests", "PackageToNuget.Tests\PackageToNuget.Tests.csproj", "{B6A160A0-E3E2-4EE4-9ABC-7F1FC4B22635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToNuget", "PackageToNuget\PackageToNuget.csproj", "{A80E884D-3F34-4F1A-BA32-8C395698B775}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{DD90C9A2-FE04-4234-9230-21F530332187}"
+	ProjectSection(SolutionItems) = preProject
+		TestData\doctypemixins.xml = TestData\doctypemixins.xml
+		TestData\DocTypeMixins_2.0.zip = TestData\DocTypeMixins_2.0.zip
+		TestData\doctypemixins_reformatted.xml = TestData\doctypemixins_reformatted.xml
+		TestData\google_maps_for_umbraco.xml = TestData\google_maps_for_umbraco.xml
+		TestData\Google_Maps_for_Umbraco_2.1.0.zip = TestData\Google_Maps_for_Umbraco_2.1.0.zip
+		TestData\imagegen.xml = TestData\imagegen.xml
+		TestData\ImageGen_2.9.0.zip = TestData\ImageGen_2.9.0.zip
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Git", "Git", "{4A1249C3-E519-4103-AD45-417E45844EEC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{0766B423-4174-4CC0-9AE4-488FEBF395FD}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6A160A0-E3E2-4EE4-9ABC-7F1FC4B22635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A160A0-E3E2-4EE4-9ABC-7F1FC4B22635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A160A0-E3E2-4EE4-9ABC-7F1FC4B22635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A160A0-E3E2-4EE4-9ABC-7F1FC4B22635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80E884D-3F34-4F1A-BA32-8C395698B775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80E884D-3F34-4F1A-BA32-8C395698B775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80E884D-3F34-4F1A-BA32-8C395698B775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80E884D-3F34-4F1A-BA32-8C395698B775}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

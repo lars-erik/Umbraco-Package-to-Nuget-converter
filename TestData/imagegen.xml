@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>imagegen.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>imagegen.dll</orgName>
+    </file>
+    <file>
+      <guid>ImageGen.config</guid>
+      <orgPath>/config</orgPath>
+      <orgName>ImageGen.config</orgName>
+    </file>
+    <file>
+      <guid>ImageGen.ashx</guid>
+      <orgPath>/</orgPath>
+      <orgName>ImageGen.ashx</orgName>
+    </file>
+    <file>
+      <guid>ImageGenInstaller.ascx</guid>
+      <orgPath>/usercontrols</orgPath>
+      <orgName>ImageGenInstaller.ascx</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>ImageGen</name>
+      <version>2.9.0</version>
+      <license url="http://www.percipientstudios.com/imagegen/license.aspx">Proprietary License</license>
+      <url>http://www.percipientstudios.com</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Douglas Robar</name>
+      <website>http://www.percipientstudios.com</website>
+    </author>
+    <readme><![CDATA[ImageGen 2.9.0
+
+Create high-quality, perfectly sized images for photo galleries, product images, staff profiles, and more. Add watermarks and overlays, rotate, resize, crop, convert image formats, and more with thirty powerful features. Create graphical text from all TrueType fonts with complete control over size, style, color, lineheight, and more for headlines and menus. High performance server and client caching. 
+
+Don’t waste your valuable time manually creating, resizing, or editing each image in Photoshop. ImageGen is an easy-to-use application for your Umbraco or ASP.NET 2.0+ website that automatically resizes photos, screenshots, and images from icon to thumbnail to full-screen sizes.
+
+ImageGen can create text graphics as well as overlay text on images, which is particularly useful for making image-based navigation with styled dynamic text on top. And ImageGen can automatically protect and brand your images with watermarks and corporate logos.
+
+With more than 30 options, ImageGen can create hundreds of thousands of variations to meet virtually any need. ImageGen is easy to install and use on your website. ImageGen creates extremely high-quality images quickly. And ImageGen’s advanced caching means images are served immediately for fast and responsive websites.
+
+Extensive documentation.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <control>/usercontrols/ImageGenInstaller.ascx</control>
+</umbPackage>

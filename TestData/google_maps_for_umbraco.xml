@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<files><file><guid>566a2231-042d-4f86-bcec-391eaa38e3f4.dll</guid><orgPath>/bin</orgPath><orgName>Our.Umbraco.GoogleMaps.dll</orgName></file></files>
+	<info>
+		<package>
+			<name>Google Maps for Umbraco</name>
+			<version>2.1.0</version>
+			<license url="http://opensource.org/licenses/MIT">MIT license</license>
+			<url>http://our.umbraco.org/projects/backoffice-extensions/google-maps-datatype</url>
+			<requirements>
+				<major>4</major>
+				<minor>7</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Darren Ferguson, Lee Kelleher, Douglas Ludlow</name>
+			<website>http://our.umbraco.org</website>
+		</author>
+		<readme><![CDATA[The Google Maps Datatype for Umbraco allows you to specify a latitude/longitude point to be saved in an Umbraco document.
+
+This point is chosen using a Google map.]]></readme>
+	</info>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes>
+		<DataType Name="Google Map" Id="1b64eae2-f9a1-4276-a071-f25dde6913dd" Definition="f435f50a-988a-417c-9067-4332ad8bfb7d" DatabaseType="Ntext">
+			<PreValues>
+				<PreValue Id="1" Alias="DefaultLocation" Value="53.430785,-2.960515" />
+				<PreValue Id="2" Alias="DefaultZoom" Value="12" />
+				<PreValue Id="3" Alias="MapHeight" Value="375" />
+				<PreValue Id="4" Alias="MapWidth" Value="459" />
+				<PreValue Id="5" Alias="SearchFilter" Value="" />
+				<PreValue Id="6" Alias="UseOnlyOneMapPoint" Value="False" />
+			</PreValues>
+		</DataType>
+	</DataTypes>
+	<Actions>
+		<Action runat="install" undo="false" alias="GoogleMaps_FixDataEditorSettings" />
+	</Actions>
+</umbPackage>
