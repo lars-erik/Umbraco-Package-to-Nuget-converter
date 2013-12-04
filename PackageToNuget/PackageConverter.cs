@@ -18,7 +18,8 @@ namespace PackageToNuget
         private readonly string path;
         private string outputPath;
         private ZipFile origZip;
-        private string root;
+        private string root = "";
+        private string pathSeparator;
 
         public PackageConverter(string path)
         {
@@ -31,7 +32,13 @@ namespace PackageToNuget
             using (origZip = new ZipFile(path))
             {
                 var definition = PackageReader.ReadDefinition(origZip);
-                root = PackageReader.FindRoot(origZip);
+                var packageEntryName = PackageReader.FindPackageXml(origZip).Name;
+                if (packageEntryName.Contains("/"))
+                    pathSeparator = "/";
+                else if (packageEntryName.Contains(@"\"))
+                    pathSeparator = @"\";
+                if (pathSeparator != null)
+                    root = packageEntryName.Substring(0, packageEntryName.IndexOf(pathSeparator, StringComparison.OrdinalIgnoreCase));
                 foreach (var packageFile in definition.Files)
                 {
                     AddFile(packageFile);
@@ -61,7 +68,7 @@ namespace PackageToNuget
             if (!Directory.Exists(physicalDirectoryPath))
                 Directory.CreateDirectory(physicalDirectoryPath);
             var physicalPath = Path.Combine(outputPath, newPath);
-            var origEntry = origZip.GetEntry(packageFile.Guid) ?? origZip.GetEntry(root + "/" + packageFile.Guid);
+            var origEntry = origZip.GetEntry(packageFile.Guid) ?? origZip.GetEntry(root + pathSeparator + packageFile.Guid);
             using (var stream = origZip.GetInputStream(origEntry))
             {
                 using (var file = File.Open(physicalPath, FileMode.Create, FileAccess.Write))
