@@ -7,6 +7,15 @@ namespace PackageToNuget.Tests
     [TestFixture]
     public class NugetConverterTests
     {
+        [Test]
+        public void Convert_AzureStorage_CreatesNewFolderWithContent()
+        {
+            ConvertAndAssertAzureStoragePackage(outputPath =>
+                Assert.IsTrue(File.Exists(outputPath + @"\config\FileSystemProvider-sample.config"))
+                );
+        }
+
+        [Test]
         public void Convert_AzureStorage_CreatesNewFolderWithPackageStructure()
         {
             ConvertAndAssertAzureStoragePackage(outputPath =>
@@ -16,6 +25,7 @@ namespace PackageToNuget.Tests
             });
         }
 
+        [Test]
         public void Convert_AzureStorage_DownloadsDependencies()
         {
             ConvertAndAssertAzureStoragePackage(outputPath =>
@@ -27,7 +37,7 @@ namespace PackageToNuget.Tests
 
         private void ConvertAndAssertAzureStoragePackage(Action<string> asserts)
         {
-            var path = TestData.GetTestFilePath("Umbraco.Azure.Storage.nupkg");
+            var path = TestData.GetTestFilePath("Umbraco.Azure.Storage.1.1.0.0.nupkg");
             var converter = new NugetConverter(path);
             var outputPath = CreateTestDirectory();
             try

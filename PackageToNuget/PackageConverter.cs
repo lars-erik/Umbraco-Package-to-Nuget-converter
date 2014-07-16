@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using ICSharpCode.SharpZipLib.Zip;
@@ -69,19 +66,7 @@ namespace PackageToNuget
                 Directory.CreateDirectory(physicalDirectoryPath);
             var physicalPath = Path.Combine(outputPath, newPath);
             var origEntry = origZip.GetEntry(packageFile.Guid) ?? origZip.GetEntry(root + pathSeparator + packageFile.Guid);
-            using (var stream = origZip.GetInputStream(origEntry))
-            {
-                using (var file = File.Open(physicalPath, FileMode.Create, FileAccess.Write))
-                {
-                    var buffer = new byte[1024];
-                    int count = 0;
-                    while((count = stream.Read(buffer, 0, 1024)) > 0)
-                    {
-                        file.Write(buffer, 0, count);
-                    }
-                    file.Flush(true);
-                }
-            }
+            origZip.Write(origEntry, physicalPath);
         }
 
         private static string GetNewPath(PackageFile packageFile)

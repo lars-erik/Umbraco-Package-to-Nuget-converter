@@ -67,6 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UmbracoDefinitions\Stylesheet.cs" />
     <Compile Include="UmbracoDefinitions\Template.cs" />
+    <Compile Include="ZipFileExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

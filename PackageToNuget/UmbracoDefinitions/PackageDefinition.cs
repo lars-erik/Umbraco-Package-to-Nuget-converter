@@ -32,6 +32,11 @@ namespace PackageToNuget.UmbracoDefinitions
         [XmlElement("control")]
         public string Control { get; set; }
 
+        public PackageDefinition()
+        {
+            Files = new List<PackageFile>();
+        }
+
         #region equality
 
         public bool Equals(PackageDefinition other)
