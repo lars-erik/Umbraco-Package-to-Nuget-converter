@@ -44,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NugetConverter.cs" />
     <Compile Include="NugetDefinitions\Dependency.cs" />
     <Compile Include="NugetDefinitions\Metadata.cs" />
     <Compile Include="NugetDefinitions\NuSpec.cs" />
+    <Compile Include="NugetReader.cs" />
     <Compile Include="UmbracoDefinitions\Action.cs" />
     <Compile Include="UmbracoDefinitions\Author.cs" />
     <Compile Include="UmbracoDefinitions\DataType.cs" />

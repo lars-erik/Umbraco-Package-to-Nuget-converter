@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefinitionSerializationTests.cs" />
+    <Compile Include="NugetConverterTests.cs" />
+    <Compile Include="NugetReaderTests.cs" />
     <Compile Include="PackageConverterTests.cs" />
     <Compile Include="PackageMapperTests.cs" />
     <Compile Include="PackageReaderTests.cs" />

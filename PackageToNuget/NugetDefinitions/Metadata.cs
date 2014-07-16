@@ -47,6 +47,7 @@ namespace PackageToNuget.NugetDefinitions
         public string Tags { get; set; }
 
         [XmlArray("dependencies")]
+        [XmlArrayItem("dependency")]
         public List<Dependency> Dependencies { get; set; }
 
         public Metadata()
@@ -54,13 +55,26 @@ namespace PackageToNuget.NugetDefinitions
             Dependencies = new List<Dependency>();
         }
 
-        #region Equality // TODO: Fix dependency comparison
+        #region Equality
 
         public bool Equals(Metadata other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return string.Equals(Id, other.Id) && string.Equals(Version, other.Version) && string.Equals(Authors, other.Authors) && string.Equals(Owners, other.Owners) && string.Equals(LicenseUrl, other.LicenseUrl) && string.Equals(ProjectUrl, other.ProjectUrl) && string.Equals(IconUrl, other.IconUrl) && RequreLicenseAcceptance.Equals(other.RequreLicenseAcceptance) && string.Equals(Description, other.Description) && string.Equals(ReleaseNotes, other.ReleaseNotes) && string.Equals(Copyright, other.Copyright) && string.Equals(Tags, other.Tags) && Equals(Dependencies, other.Dependencies);
+            return
+                string.Equals(Id, other.Id) && 
+                string.Equals(Version, other.Version) && 
+                string.Equals(Authors, other.Authors) && 
+                string.Equals(Owners, other.Owners) && 
+                string.Equals(LicenseUrl, other.LicenseUrl) && 
+                string.Equals(ProjectUrl, other.ProjectUrl) && 
+                string.Equals(IconUrl, other.IconUrl) && 
+                RequreLicenseAcceptance.Equals(other.RequreLicenseAcceptance) && 
+                string.Equals(Description, other.Description) && 
+                string.Equals(ReleaseNotes, other.ReleaseNotes) && 
+                string.Equals(Copyright, other.Copyright) && 
+                string.Equals(Tags, other.Tags) && 
+                Dependencies.SequenceEqual(other.Dependencies);
         }
 
         public override bool Equals(object obj)

@@ -12,8 +12,6 @@ namespace PackageToNuget.Tests
         [TestCase("imagegen_2.9.0.zip", "imagegen.xml")]
         [TestCase("doctypemixins_2.0.zip", "doctypemixins.xml")]
         [TestCase("google_maps_for_umbraco_2.1.0.zip", "google_maps_for_umbraco.xml")]
-        [TestCase("google_maps_for_umbraco_2.1.0.zip", "google_maps_for_umbraco.xml")]
-        [TestCase("AzureStorage_1.0.1.zip", "AzureStorage_1.0.1.xml")]
         public void ReadPackage_ReturnsPackageDefinition(string zipFile, string expectedPackageXmlFile)
         {
             var path = TestData.GetTestFilePath(zipFile);

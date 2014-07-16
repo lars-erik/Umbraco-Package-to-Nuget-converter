@@ -9,14 +9,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToNuget", "PackageTo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{DD90C9A2-FE04-4234-9230-21F530332187}"
 	ProjectSection(SolutionItems) = preProject
+		TestData\AzureStorage_1.0.4.zip = TestData\AzureStorage_1.0.4.zip
+		TestData\DocTypeMixins.nupkg = TestData\DocTypeMixins.nupkg
 		TestData\doctypemixins.nuspec = TestData\doctypemixins.nuspec
 		TestData\doctypemixins.xml = TestData\doctypemixins.xml
 		TestData\DocTypeMixins_2.0.zip = TestData\DocTypeMixins_2.0.zip
 		TestData\doctypemixins_reformatted.xml = TestData\doctypemixins_reformatted.xml
+		TestData\Google Maps for Umbraco.nupkg = TestData\Google Maps for Umbraco.nupkg
 		TestData\google_maps_for_umbraco.xml = TestData\google_maps_for_umbraco.xml
 		TestData\Google_Maps_for_Umbraco_2.1.0.zip = TestData\Google_Maps_for_Umbraco_2.1.0.zip
+		TestData\ImageGen.nupkg = TestData\ImageGen.nupkg
 		TestData\imagegen.xml = TestData\imagegen.xml
 		TestData\ImageGen_2.9.0.zip = TestData\ImageGen_2.9.0.zip
+		TestData\Umbraco.Azure.Storage.1.1.0.0.nupkg = TestData\Umbraco.Azure.Storage.1.1.0.0.nupkg
+		TestData\Umbraco.Azure.Storage.nuspec = TestData\Umbraco.Azure.Storage.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Git", "Git", "{4A1249C3-E519-4103-AD45-417E45844EEC}"

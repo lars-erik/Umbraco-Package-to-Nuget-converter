@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace PackageToNuget.NugetDefinitions
 {
-    [XmlRoot("package")]
+    [XmlRoot("package", Namespace = "http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd")]
     public class NuSpec : IEquatable<NuSpec>
     {
         [XmlElement("metadata")]
@@ -51,5 +52,20 @@ namespace PackageToNuget.NugetDefinitions
         }
 
         #endregion
+
+        public static NuSpec Load(string path)
+        {
+            using (var stream = File.OpenRead(path))
+            {
+                return Load(stream);
+            }
+        }
+
+        public static NuSpec Load(Stream stream)
+        {
+            var serializer = new XmlSerializer(typeof(NuSpec));
+            return (NuSpec)serializer.Deserialize(stream);
+        }
+
     }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Umbraco.Azure.Storage</id>
+    <version>1.1.0.0</version>
+    <title>Umbraco Azure Blob Storage</title>
+    <authors>Dirk Seefeld &amp; Lars-Erik Aabech</authors>
+    <owners>Dirk Seefeld, Lars-Erik Aabech</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/idseefeld/UmbracoAzureBlobStorage/</projectUrl>
+    <iconUrl>http://lars-erik.github.io/UmbracoAzureBlobStorage/ucloud.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Store media files in Azure Storage
+
+      You have to configure the file system provider for your Azure Storage Account in umbraco /config in file FileSystemProviders.config.
+
+      This package installs a sample config file: ~/Config/FileSystemProviders-sample.config
+
+      For more details read the documentation on http://our.umbraco.org/projects/backoffice-extensions/azure-blob-storage-provider.</description>
+    <releaseNotes />
+    <copyright>Copyright 2012-2014 Dirk Seefeld, Lars-Erik Aabech</copyright>
+    <tags>Umbraco Azure Storage</tags>
+    <dependencies>
+      <dependency id="WindowsAzure.Storage" version="3.2.1" />
+    </dependencies>
+  </metadata>
+</package>
